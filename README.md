@@ -1,13 +1,10 @@
 # Terraform as IaC Tool for AWS Resource Provisioning and CI/CD
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 ## Project Overview
 This project demonstrates the use of Terraform as an Infrastructure as Code (IaC) tool to provision AWS cloud resources and the integration of GitHub Actions for automating the CI/CD pipeline. The infrastructure includes essential components like VPC, subnets, EC2 instances, a load balancer and more, creating a secure and scalable architecture.
 
 The project also features a simple frontend hosted on EC2 instances, which displays a welcome message and provides instance-related details (e.g., instance ID, type, and availability zone). Traffic is managed efficiently using an Application Load Balancer.
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Architecture Description
 
@@ -18,8 +15,7 @@ The project also features a simple frontend hosted on EC2 instances, which displ
 5. S3 Bucket: Configured as the backend for Terraform to store state files securely.
 6. Application Load Balancer (ALB): Distributes traffic evenly between the EC2 instances.
 7. Security Groups: Configured with HTTP and SSH rules for secure access.
-   
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 ## Steps to Replicate the Setup
 
@@ -48,7 +44,6 @@ The GitHub Actions workflow automates the infrastructure deployment. Push change
     * Build and test the configuration.
     * Deploy changes automatically using Terraform.
     
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## How to Test the Deployed Application
 
@@ -57,7 +52,6 @@ Open the DNS public IP in your browser:
 You should see the frontend displaying:
         A welcome message and information about the instances (e.g., instance ID, instance type, and availability zone).
         
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Verify Load Balancing
 
