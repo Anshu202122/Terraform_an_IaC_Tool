@@ -23,7 +23,7 @@ The project also features a simple frontend hosted on EC2 instances, which displ
 
 * Install Terraform
 * Set up AWS CLI and configure your credentials:
-- aws configure
+  - aws configure
 * Fork or clone this repository.
 
 ### 2. Configure Terraform
