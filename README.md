@@ -23,6 +23,7 @@ The project also features a simple frontend hosted on EC2 instances, which displ
 
 * Install Terraform
 * Set up AWS CLI and configure your credentials:
+
 &ensp;&ensp;&ensp;&ensp;aws configure
 * Fork or clone this repository.
 
@@ -30,12 +31,16 @@ The project also features a simple frontend hosted on EC2 instances, which displ
 
 * Navigate to the project directory containing the Terraform files.
 * Initialize Terraform:
+
 &ensp;&ensp;&ensp;&ensp;terraform init
 * Validate the configuration files:
+
 &ensp;&ensp;&ensp;&ensp;terraform validate
 * Plan the infrastructure:
+
 &ensp;&ensp;&ensp;&ensp;terraform plan
 * Apply the Terraform configuration to provision resources:
+
 &ensp;&ensp;&ensp;&ensp;terraform apply
 
 ### 3. CI/CD Pipeline
@@ -50,6 +55,7 @@ The GitHub Actions workflow automates the infrastructure deployment. Push change
 * After deploying the infrastructure, note the public IP of the Application Load Balancer from the Terraform output.
 * Open the DNS public IP in your browser:
 * You should see the frontend displaying:
+
 &ensp;&ensp;&ensp;&ensp;A welcome message and information about the instances (e.g., instance ID, instance type, and availability zone).
 
 
