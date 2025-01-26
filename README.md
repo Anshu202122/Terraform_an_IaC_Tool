@@ -30,17 +30,13 @@ The project also features a simple frontend hosted on EC2 instances, which displ
 
 * Navigate to the project directory containing the Terraform files.
 * Initialize Terraform:
-
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;-terraform init
+  - terraform init
 * Validate the configuration files:
-
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;-terraform validate
+  - terraform validate
 * Plan the infrastructure:
-
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;-terraform plan
+  - terraform plan
 * Apply the Terraform configuration to provision resources:
-
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;-terraform apply
+  - terraform apply
 
 ### 3. CI/CD Pipeline
 
