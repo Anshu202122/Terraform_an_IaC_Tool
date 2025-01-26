@@ -41,8 +41,8 @@ The project also features a simple frontend hosted on EC2 instances, which displ
 ### 3. CI/CD Pipeline
 
 The GitHub Actions workflow automates the infrastructure deployment. Push changes to the repository, and the pipeline will:
-    * Build and test the configuration.
-    * Deploy changes automatically using Terraform.
+* Build and test the configuration.
+* Deploy changes automatically using Terraform.
     
 
 ## How to Test the Deployed Application
