@@ -8,13 +8,13 @@ The project also features a simple frontend hosted on EC2 instances, which displ
 
 ## Architecture Description
 
-1. VPC: A Virtual Private Cloud to isolate resources in a secure network.
-2. Subnets: Two subnets are associated with the routing table for better traffic distribution.
-3. Routing Table and Internet Gateway: Ensures connectivity between resources and the internet.
-4. EC2 Instances: Two instances hosting a simple frontend application displaying instance details.
-5. S3 Bucket: Configured as the backend for Terraform to store state files securely.
-6. Application Load Balancer (ALB): Distributes traffic evenly between the EC2 instances.
-7. Security Groups: Configured with HTTP and SSH rules for secure access.
+1. **VPC:** A Virtual Private Cloud to isolate resources in a secure network.
+2. **Subnets:** Two subnets are associated with the routing table for better traffic distribution.
+3. **Routing Table and Internet Gateway:** Ensures connectivity between resources and the internet.
+4. **EC2 Instances:** Two instances hosting a simple frontend application displaying instance details.
+5. **S3 Bucket:** Configured as the backend for Terraform to store state files securely.
+6. **Application Load Balancer (ALB):** Distributes traffic evenly between the EC2 instances.
+7. **Security Groups:** Configured with HTTP and SSH rules for secure access.
 
 
 ## Steps to Replicate the Setup
@@ -23,20 +23,20 @@ The project also features a simple frontend hosted on EC2 instances, which displ
 
 * Install Terraform
 * Set up AWS CLI and configure your credentials:
-     aws configure
+&ensp;&ensp;&ensp;&ensp;aws configure
 * Fork or clone this repository.
 
 ### 2. Configure Terraform
 
 * Navigate to the project directory containing the Terraform files.
 * Initialize Terraform:
-    terraform init
+&ensp;&ensp;&ensp;&ensp;terraform init
 * Validate the configuration files:
-    terraform validate
+&ensp;&ensp;&ensp;&ensp;terraform validate
 * Plan the infrastructure:
-    terraform plan
+&ensp;&ensp;&ensp;&ensp;terraform plan
 * Apply the Terraform configuration to provision resources:
-    terraform apply
+&ensp;&ensp;&ensp;&ensp;terraform apply
 
 ### 3. CI/CD Pipeline
 
@@ -47,11 +47,11 @@ The GitHub Actions workflow automates the infrastructure deployment. Push change
 
 ## How to Test the Deployed Application
 
-After deploying the infrastructure, note the public IP of the Application Load Balancer from the Terraform output.
-Open the DNS public IP in your browser:
-You should see the frontend displaying:
-        A welcome message and information about the instances (e.g., instance ID, instance type, and availability zone).
-        
+* After deploying the infrastructure, note the public IP of the Application Load Balancer from the Terraform output.
+* Open the DNS public IP in your browser:
+* You should see the frontend displaying:
+&ensp;&ensp;&ensp;&ensp;A welcome message and information about the instances (e.g., instance ID, instance type, and availability zone).
+
 
 ## Verify Load Balancing
 
