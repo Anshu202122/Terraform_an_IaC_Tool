@@ -1,4 +1,4 @@
-# Terraform as IaC Tool for AWS Resource Provisioning and CI/CD
+# Terraform an IaC Tool for AWS Resource Provisioning and CI/CD
 
 ## Project Overview
 This project demonstrates the use of Terraform as an Infrastructure as Code (IaC) tool to provision AWS cloud resources and the integration of GitHub Actions for automating the CI/CD pipeline. The infrastructure includes essential components like VPC, subnets, EC2 instances, a load balancer and more, creating a secure and scalable architecture.
